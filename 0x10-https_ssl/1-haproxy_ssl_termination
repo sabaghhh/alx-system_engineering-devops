@@ -39,7 +39,6 @@ frontend softwaremania
 	option forwardfor
 	option httpclose
 	option http-server-close
-	http-request redirect scheme https code 301 unless { ssl_fc }
 	default_backend servermania
 
 backend servermania
